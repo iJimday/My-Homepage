@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jimday - 阿戴主页</title>
   <meta name="description" content="欲买桂花同载酒，终不似，少年游。">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--主体CSS-->
 </head>
 
 <body>
@@ -238,60 +238,33 @@
     <!-- 底部版权栏 -->
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2026 Jimday. All rights reserved. <a href="http://caonb.cn/"  target="_blank">Template</a></p>
+        <p>&copy; 2026 Jimday. All rights reserved. <a href="http://caonb.cn/"  target="_blank" style="text-decoration: none;color: inherit;">Template</a></p>
       </div>
     </footer>
   </div>
 
-  <!-- 灵动岛弹窗 -->
-    <link rel="stylesheet" type="text/css" href="assets/css/dynamic-island.css">
+	<!-- 灵动岛弹窗 -->
+	<link rel="stylesheet" type="text/css" href="assets/css/dynamic-island.css">
 
-  <div class="dynamic-island-container">
-    <div class="dynamic-island" id="dynamicIsland">
-      <div class="dynamic-island-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" id="dynamicIslandIconSvg">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-      </div>
-      <div class="dynamic-island-text" id="dynamicIslandText"></div>
-      <div class="dynamic-island-progress">
-        <div class="dynamic-island-progress-bar" id="dynamicIslandProgress"></div>
-      </div>
-    </div>
-  </div>
+	<div class="dynamic-island-container">
+		<div class="dynamic-island" id="dynamicIsland">
+			<div class="dynamic-island-icon">
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" id="dynamicIslandIconSvg">
+				<polyline points="20 6 9 17 4 12"></polyline>
+			</svg>
+			</div>
+				<div class="dynamic-island-text" id="dynamicIslandText"></div>
+				<div class="dynamic-island-progress">
+				<div class="dynamic-island-progress-bar" id="dynamicIslandProgress"></div>
+				</div>
+		</div>
+	</div>
 
-  <script src="assets/js/dynamicIslandTimer.js"></script>
+	<script src="assets/js/DynamicIslandTimer.js"></script><!--灵动岛计时器-->
 
-  <style>
-    .dynamic-island {
-      background: linear-gradient(135deg, #3a4d60 0%, #2c4a6e 100%);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    }
-
-    .dynamic-island-icon {
-      display: none;
-    }
-
-    .dynamic-island-text {
-      text-align: center;
-      width: 100%;
-    }
-
-    .dynamic-island-progress {
-      background: rgba(30, 144, 255, 0.3);
-    }
-
-    .dynamic-island-progress-bar {
-      background: #1e90ff;
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(function () {
-        showDynamicIsland('欢迎来到我的主页', 'info');
-      }, 200);
-    });
-  </script>
+	<link rel="stylesheet" type="text/css" href="assets/css/dynamic-island-style.css"><!--灵动岛style-->
+	
+	<script src="assets/js/DynamicIslandText.js"></script><!--灵动岛文字-->
 </body>
 
 </html>
