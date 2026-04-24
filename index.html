@@ -2,11 +2,13 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jimday - 阿戴主页</title>
-  <meta name="description" content="欲买桂花同载酒，终不似，少年游。">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--主体CSS-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jimday - 阿戴主页</title>
+	<meta name="description" content="欲买桂花同载酒，终不似，少年游。">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--主体CSS-->
+	<script src="assets/js/translate.js"></script>
+	<script src="assets/js/translate-fine-tuning.js"></script><!--translate.js settings-->
 </head>
 
 <body>
@@ -235,16 +237,16 @@
       </div>
     </div>
 
-	<!-- 底部版权栏 -->
-	<footer class="footer">
-		<div class="footer-content">
-			<p>&copy; 2026 Jimday. All Rights Reserved.&nbsp;
-				<a href="http://caonb.cn/"  target="_blank" style="text-decoration: none;color: inherit;">Template</a>&nbsp;
-				<a href="sitemap.xml"  target="_blank" style="text-decoration: none;color: inherit;">Sitemap</a>
-			</p>
-		</div>
-	</footer>
-  </div>
+		<!-- 底部版权栏 -->
+		<footer class="footer">
+			<div class="footer-content">
+				<p>&copy; 2026 Jimday. All Rights Reserved.&nbsp;
+					<a href="http://caonb.cn/"  target="_blank" style="text-decoration: none;color: inherit;">Template</a>&nbsp;
+					<a href="sitemap.xml"  target="_blank" style="text-decoration: none;color: inherit;">Sitemap</a>
+				</p>
+			</div>
+		</footer>
+	</div>
 
 	<!-- 灵动岛弹窗 -->
 	<link rel="stylesheet" type="text/css" href="assets/css/dynamic-island.css">
@@ -268,6 +270,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/dynamic-island-style.css"><!--灵动岛style-->
 	
 	<script src="assets/js/DynamicIslandText.js"></script><!--灵动岛文字-->
-</body>
 
+</body>
+	<script><!--translate.zvo.cn-->
+		translate.execute(); //dom加载完后，进行translate.js 触发翻译的执行
+		translate.isTranslateExecute('english'); //当前是否已进行了翻译处理
+	</script>
 </html>
