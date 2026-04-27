@@ -5,7 +5,10 @@ translate.language.translateLanguagesRange = ['chinese_simplified']; //只翻译
 translate.nomenclature.append('chinese_simplified', 'english', `
 	戴=Day
 	阿戴=Jimday
+	小戴米铺=Jimday's Domains
 	欲买桂花同载酒，终不似，少年游。=I want to buy osmanthus to go drinking,but after all, I don’t have the traveling spirit at youth.
+	我的站点=My Web Sites
+	个=Sites
 	网站地图=Sitemap
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
