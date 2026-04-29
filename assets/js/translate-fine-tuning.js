@@ -9,12 +9,14 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 	小戴米铺=Jimday's Domains
 	欲买桂花同载酒，终不似，少年游。=I want to buy osmanthus to go drinking,but after all, I don’t have the traveling spirit at youth.
 	我的站点=My Web Sites
-	4个=4 Sites
+	5个=5 Sites
 	菜=Cai
-	小趴菜=Little Pacai 
+	小趴菜=Little Pacai
+	米=Mishi
 	米市=Domains Shop
 	小戴米市=Jimday's Domains Shop
-	铺=Shop
+	铺=Mipu
+	测测&nbsp;=IP
 	网站地图=Sitemap
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
