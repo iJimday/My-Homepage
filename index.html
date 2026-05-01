@@ -14,17 +14,30 @@
 
 <body>
   <div class="main-container">
-    <!-- 顶部个人信息区 -->
-    <div class="profile-section">
-      <div class="profile-content">
-        <div class="avatar-wrapper">
-          <div class="avatar">
-            戴</div>
-        </div>
-        <div class="profile-name">Jimday</div>
-        <div class="profile-bio">欲买桂花同载酒，终不似，少年游。</div>
-      </div>
-    </div>
+	<!-- 顶部个人信息区 -->
+	<div class="profile-section">
+	  <div class="profile-content">
+		<div class="avatar-wrapper">
+		  <div class="avatar">
+			戴</div>
+		</div>
+		<div class="profile-name">Jimday</div>
+		<div class="profile-bio">
+			<!-- jinrishici.com -->
+			<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+			<div id="poem_sentence"></div>
+			<div id="poem_info"></div>
+			<script type="text/javascript">
+				jinrishici.load(function (result) {
+					var sentence = document.querySelector("#poem_sentence")
+					var info = document.querySelector("#poem_info")
+					sentence.innerHTML = result.data.content
+					info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+				});
+			</script>
+		</div>
+	  </div>
+	</div>
 
     <!-- 下方站点列表区 -->
     <div class="sites-section">
@@ -241,6 +254,7 @@
 		<!-- 底部版权栏 -->
 		<footer class="footer">
 			<div class="footer-content">
+				<p>欲买桂花同载酒，终不似，少年游。</p>
 				<p>&copy; <script>document.write(new Date().getFullYear());</script> Jimday. All Rights Reserved.&nbsp;
 					<a href="http://caonb.cn/" target="_blank" style="text-decoration: none;color: inherit;">Template</a>&nbsp;|&nbsp;
 					<a href="sitemap.xml" title="Sitemap" target="_blank" style="text-decoration: none;color: inherit;">网站地图</a>
