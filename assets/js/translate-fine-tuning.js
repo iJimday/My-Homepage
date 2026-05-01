@@ -9,7 +9,7 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 	阿戴=Jimday
 	小戴米铺=Jimday's Domains
 	欲买桂花同载酒，终不似，少年游。=I want to buy osmanthus to go drinking,but after all, I don’t have the traveling spirit at youth.
-	我的站点=My Web Sites
+	我的站点=My Websites
 	5个=5 Sites
 	菜 =Cai
 	小趴菜=Little Pacai
