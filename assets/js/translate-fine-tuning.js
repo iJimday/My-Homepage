@@ -21,11 +21,13 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
 translate.ignore.text.push('English'); //翻译时忽略指定的文字不翻译
-var obj = {
-    "欢迎来到我的主页":"Welcome to my homepage",
-};
-translate.js.transObject(
-    obj,
+var str = `
+    {
+       "欢迎来到我的主页":"Welcome to my homepage"
+    }
+`;
+translate.js.transString(
+    str,
     'english',
     function(obj){
         console.log(obj);
