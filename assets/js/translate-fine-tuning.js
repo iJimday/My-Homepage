@@ -21,3 +21,4 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
 translate.ignore.text.push('English'); //翻译时忽略指定的文字不翻译
+translate.setDocuments(); //翻译指定的元素
