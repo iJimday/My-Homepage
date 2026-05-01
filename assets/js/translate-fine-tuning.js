@@ -21,18 +21,4 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
 translate.ignore.text.push('English'); //翻译时忽略指定的文字不翻译
-var str = `
-    {
-       "欢迎来到我的主页":"Welcome to my homepage"
-    }
-`;
-translate.js.transString(
-    str,
-    'english',
-    function(obj){
-        console.log(obj);
-    },
-    function(failureInfo){ 
-        console.log(failureInfo); 
-    }
-);//对JS对象及代码进行翻译
+translate.listener.start(); //监控页面动态渲染的文本进行自动翻译
