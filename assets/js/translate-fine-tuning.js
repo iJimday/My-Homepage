@@ -1,6 +1,7 @@
 translate.language.setUrlParamControl('lang'); //根据URL传参控制以何种语种显示
 translate.selectLanguageTag.show = false //设置不显示语言选择的select下拉框
 translate.service.use('client.edge'); //设置使用的翻译服务
+translate.listener.start(); //监控页面动态渲染的文本进行自动翻译
 translate.language.setLocal('chinese_simplified'); //设置本地语种为简体中文
 translate.language.translateLanguagesRange = ['chinese_simplified']; //只翻译简体中文
 translate.nomenclature.append('chinese_simplified', 'english', `
@@ -21,4 +22,3 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
 translate.ignore.text.push('English'); //翻译时忽略指定的文字不翻译
-translate.listener.start(); //监控页面动态渲染的文本进行自动翻译
