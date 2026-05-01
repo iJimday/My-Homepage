@@ -12,13 +12,13 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 	5个=5 Sites
 	菜 =Cai
 	小趴菜=Little Pacai
-	米 =Mishi
+	米 =Mish
 	米市=Domains Shop
 	小戴米市=Jimday's Domains Shop
 	铺 =Mipu
-	测 =IP 
+	测 =IP
 	网站地图=Sitemap
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
 translate.ignore.text.push('English'); //翻译时忽略指定的文字不翻译
-translate.setDocuments(showDynamicIsland); //翻译指定的元素
+translate.setDocuments(dynamicIslandText); //翻译指定的元素
