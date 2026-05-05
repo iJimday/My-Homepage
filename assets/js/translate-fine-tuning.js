@@ -19,6 +19,8 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 	小戴米市=Jimday's Domains Shop
 	铺 =Mipu
 	测 =IP
+	链 =Links
+	短链接=Link Shortener
 	网站地图=Sitemap
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译
