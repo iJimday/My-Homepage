@@ -31,3 +31,19 @@ themeToggle.addEventListener('click', () => {
 	localStorage.setItem('darkMode', isDark);
 	tooltip.textContent = isDark ? '点击切换浅色模式' : '点击切换深色模式';
 });
+
+// Template 弹窗逻辑
+const templateBtn = document.getElementById('templateBtn');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
+templateBtn.addEventListener('click', () => {
+	modalOverlay.classList.add('show');
+});
+modalClose.addEventListener('click', () => {
+	modalOverlay.classList.remove('show');
+});
+modalOverlay.addEventListener('click', (e) => {
+	if (e.target === modalOverlay) {
+		modalOverlay.classList.remove('show');
+	}
+});
