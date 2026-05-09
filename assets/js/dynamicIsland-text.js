@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(function() {
-		showDynamicIsland('欢迎来到我的主页', 'info');
+		showDynamicIsland('点击头像切换模式', 'info');
 	}, 200);
 });

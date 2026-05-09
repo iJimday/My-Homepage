@@ -12,6 +12,7 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 	欲买桂花同载酒，终不似，少年游。=I want to buy osmanthus to go drinking,but after all, I don’t have the traveling spirit at youth.
 	我的站点=My Websites
 	6个=6 Sites
+	我 =Me
 	菜 =Cai
 	小趴菜=Little Pacai
 	米 =Mish
@@ -21,6 +22,8 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 	测 =IP
 	链 =URL
 	短链接=Link Shortener
+	豆包=Doubao
+	微微微微微微微微微微微微微微微调=Fine-tuning code
 	网站地图=Sitemap
 `); //自定义翻译术语
 translate.ignore.text.push('中文'); //翻译时忽略指定的文字不翻译

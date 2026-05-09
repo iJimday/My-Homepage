@@ -8,251 +8,223 @@
 	<meta name="description" content="欲买桂花同载酒，终不似，少年游。">
 	<meta name="keywords" content="Jimday,阿戴,个人主页,域名,短链接,工具">
 	<meta name="author" content="Jimday">
-	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="canonical" href="https://www.jimday.cn/">
+	<meta name="theme-color" content="#0088ff">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<meta property="og:title" content="Jimday - 阿戴主页">
+	<meta property="og:description" content="Jimday 阿戴个人主页。">
+	<meta property="og:url" content="https://www.jimday.cn/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Jimday">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Jimday - 阿戴主页">
+	<meta name="twitter:description" content="Jimday 阿戴个人主页。">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--主体CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/all.min.css"><!--fontawesome-->
 </head>
 
 <body>
-  <div class="main-container">
-	<!-- 顶部个人信息区 -->
-	<div class="profile-section">
-	  <div class="profile-content">
-		<div class="avatar-wrapper">
-		  <div class="avatar">戴</div>
+	<div class="main-container">
+		<!-- 顶部个人信息区 -->
+		<div class="profile-section">
+			<div class="profile-content">
+				<div class="avatar-wrapper" id="themeToggle">
+					<div class="avatar">戴</div>
+					<div class="avatar-tooltip">点击切换深色模式</div>
+				</div>
+				<div class="profile-name"><i class="fa-solid fa-at"></i>Jimday</div>
+				<div class="profile-bio">
+					<!-- jinrishici.com -->
+					<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+					<div id="poem_sentence"></div>
+					<div id="poem_info"></div>
+					<script type="text/javascript">
+						jinrishici.load(function (result) {
+							var sentence = document.querySelector("#poem_sentence")
+							var info = document.querySelector("#poem_info")
+							sentence.innerHTML = result.data.content
+							info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+						});
+					</script>
+				</div>
+			</div>
 		</div>
-		<div class="profile-name"><i class="fa-solid fa-at"></i>Jimday</div>
-		<div class="profile-bio">
-			<!-- jinrishici.com -->
-			<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-			<div id="poem_sentence"></div>
-			<div id="poem_info"></div>
-			<script type="text/javascript">
-				jinrishici.load(function (result) {
-					var sentence = document.querySelector("#poem_sentence")
-					var info = document.querySelector("#poem_info")
-					sentence.innerHTML = result.data.content
-					info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-				});
-			</script>
-		</div>
-	  </div>
-	</div>
 
-    <!-- 下方站点列表区 -->
-    <div class="sites-section">
-      <div class="sites-header">
-        <h2 class="sites-title">我的站点</h2>
-        <span class="sites-count">5个</span>
-      </div>
+		<!-- 下方站点列表区 -->
+		<div class="sites-section">
+			<div class="sites-header">
+				<h2 class="sites-title">我的站点</h2>
+				<span class="sites-count">6个</span>
+			</div>
 
-      <div class="sites-grid">
-        <a href="http://jimday.cn" target="_blank" class="site-card" style="animation-delay: 0s;">
-          <div class="site-card-content">
-            <div class="site-icon">我</div>
-            <div class="site-info">
-              <div class="site-name">我的主页</div>
-              <div class="site-desc">我的主页，个人主页</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              Jimday.cn
-            </div>
-          </div>
-        </a>
-        <a href="https://www.pacai.cn" target="_blank" class="site-card" style="animation-delay: 0.1s;">
-          <div class="site-card-content">
-            <div class="site-icon">菜 </div>
-            <div class="site-info">
-              <div class="site-name">小趴菜</div>
-              <div class="site-desc">小戴米铺！精选好域名，价格透明；支持担保交易与快速过户！</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              Pacai.cn
-            </div>
-          </div>
-        </a>
-        <a href="http://www.2urls.cn" target="_blank" class="site-card" style="animation-delay: 0.2s;">
-          <div class="site-card-content">
-            <div class="site-icon">米 </div>
-            <div class="site-info">
-              <div class="site-name">小趴菜米市</div>
-              <div class="site-desc">小戴米市！在米市找到您的专属域名！</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              2Urls.cn
-            </div>
-          </div>
-        </a>
-        <a href="http://www.eurls.cn" target="_blank" class="site-card" style="animation-delay: 0.3s;">
-          <div class="site-card-content">
-            <div class="site-icon">铺 </div>
-            <div class="site-info">
-              <div class="site-name">小戴米铺E</div>
-              <div class="site-desc">小戴米铺-Ename！管理、展示、出售域名。</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              Eurls.cn
-			  </div>
-          </div>
-        </a>
-        <a href="https://check.proxyip.furls.cn" target="_blank" class="site-card" style="animation-delay: 0.4s;">
-          <div class="site-card-content">
-            <div class="site-icon">测 </div>
-            <div class="site-info">
-              <div class="site-name">个人检测工具</div>
-              <div class="site-desc">一款基于 Cloudflare 的 ProxyIP 检测工具</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              Check.ProxyIP.furls.cn
-            </div>
-          </div>
-        </a>
-        <a href="https://i.furls.cn/dashboard" target="_blank" class="site-card" style="animation-delay: 0.5s;">
-          <div class="site-card-content">
-            <div class="site-icon">链 </div>
-            <div class="site-info">
-              <div class="site-name">个人短链接系统</div>
-              <div class="site-desc">一款简洁、极速、安全的短链接工具，自带数据统计分析功能，全程基于Cloudflare运行。</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              i.furls.cn
-            </div>
-          </div>
-        </a>
+			<div class="sites-grid">
+				<a href="http://jimday.cn" rel="noopener noreferrer" class="site-card" style="animation-delay: 0s;">
+					<div class="site-card-content">
+						<div class="site-icon">我 </div>
+						<div class="site-info">
+							<div class="site-name">我的主页&nbsp;<i class="fa-regular fa-house"></i></div>
+							<div class="site-desc">我的个人主页，简洁大方</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg>
+							Jimday.cn
+						</div>
+					</div>
+				</a>
+				<a href="https://www.pacai.cn" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.1s;">
+					<div class="site-card-content">
+						<div class="site-icon">菜 </div>
+						<div class="site-info">
+							<div class="site-name">小趴菜&nbsp;<i class="fa-solid fa-heart-circle-plus"></i></div>
+							<div class="site-desc">小戴米铺！精选好域名，价格透明；支持担保交易与快速过户！</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url"><i class="fa-solid fa-arrow-up-right-from-square"></i>Pacai.cn</div>
+					</div>
+				</a>
+				<a href="http://www.2urls.cn" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.2s;">
+					<div class="site-card-content">
+						<div class="site-icon">米 </div>
+						<div class="site-info">
+							<div class="site-name">小趴菜米市&nbsp;<i class="fa-solid fa-cart-shopping"></i></div>
+							<div class="site-desc">小戴米市，在米市找到您的专属域名！</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url">
+							<i class="fa-solid fa-arrow-up-right-from-square"></i>2Urls.cn</div>
+					</div>
+				</a>
+				<a href="http://www.eurls.cn" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.3s;">
+					<div class="site-card-content">
+						<div class="site-icon">铺 </div>
+						<div class="site-info">
+							<div class="site-name">小戴米铺E&nbsp;<i class="fa-solid fa-basket-shopping"></i></div>
+							<div class="site-desc">小戴米铺-Ename！管理、展示、出售域名。</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url"><i class="fa-solid fa-arrow-up-right-from-square"></i>Eurls.cn</div>
+					</div>
+				</a>
+				<a href="https://check.proxyip.furls.cn" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.4s;">
+					<div class="site-card-content">
+						<div class="site-icon">测 </div>
+						<div class="site-info">
+							<div class="site-name">个人检测工具&nbsp;<i class="fa-solid fa-toolbox"></i></div>
+							<div class="site-desc">基于 Cloudflare 的 ProxyIP 检测工具</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url"><i class="fa-solid fa-arrow-up-right-from-square"></i>Check.ProxyIP.furls.cn</div>
+					</div>
+				</a>
+				<a href="https://i.furls.cn/dashboard" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.5s;">
+					<div class="site-card-content">
+						<div class="site-icon">链 </div>
+						<div class="site-info">
+							<div class="site-name">个人短链接系统&nbsp;<i class="fa-solid fa-link"></i></div>
+							<div class="site-desc">简洁、极速、安全的短链接工具，自带数据统计分析功能，全程基于Cloudflare运行。</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url"><i class="fa-solid fa-arrow-up-right-from-square"></i>i.furls.cn</div>
+					</div>
+				</a>
 		<!--
-        <a href="http://blog.nx.cn" target="_blank" class="site-card" style="animation-delay: 0.6s;">
-          <div class="site-card-content">
-            <div class="site-icon">
-              逆 </div>
-            <div class="site-info">
-              <div class="site-name">逆袭博客</div>
-              <div class="site-desc">我的个人博客</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              blog.nx.cn
-            </div>
-          </div>
-        </a>
-        <a href="http://jiese.me" target="_blank" class="site-card" style="animation-delay: 0.7s;">
-          <div class="site-card-content">
-            <div class="site-icon">
-              戒 </div>
-            <div class="site-info">
-              <div class="site-name">戒色么</div>
-              <div class="site-desc">一个戒色打卡记录网</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              jiese.me
-            </div>
-          </div>
-        </a>
-        <a href="http://www.gmbzw.com/" target="_blank" class="site-card" style="animation-delay: 0.8s;">
-          <div class="site-card-content">
-            <div class="site-icon">
-              国 </div>
-            <div class="site-info">
-              <div class="site-name">国漫壁纸网</div>
-              <div class="site-desc">国漫Ai绘画国漫女神壁纸动漫壁纸免费下载</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              www.gmbzw.com
-            </div>
-          </div>
-        </a>
-        <a href="http://host.hk.cn/" target="_blank" class="site-card" style="animation-delay: 0.9s;">
-          <div class="site-card-content">
-            <div class="site-icon">
-              香 </div>
-            <div class="site-info">
-              <div class="site-name">香港主机</div>
-              <div class="site-desc">20元永久网站主机</div>
-            </div>
-          </div>
-          <div class="site-card-footer">
-            <div class="site-url">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              host.hk.cn
-            </div>
-          </div>
-        </a>-->
-      </div>
-    </div>
+				<a href="http://blog.nx.cn" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.6s;">
+					<div class="site-card-content">
+						<div class="site-icon"> 逆 </div>
+						<div class="site-info">
+							<div class="site-name">逆袭博客</div>
+							<div class="site-desc">我的个人博客</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg> blog.nx.cn
+						</div>
+					</div>
+				</a>
+				<a href="http://jiese.me" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.7s;">
+					<div class="site-card-content">
+						<div class="site-icon"> 戒 </div>
+						<div class="site-info">
+							<div class="site-name">戒色么</div>
+							<div class="site-desc">一个戒色打卡记录网</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg> jiese.me
+						</div>
+					</div>
+				</a>
+				<a href="http://www.gmbzw.com/" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.8s;">
+					<div class="site-card-content">
+						<div class="site-icon"> 国 </div>
+						<div class="site-info">
+							<div class="site-name">国漫壁纸网</div>
+							<div class="site-desc">国漫Ai绘画国漫女神壁纸动漫壁纸免费下载</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg> www.gmbzw.com
+						</div>
+					</div>
+				</a>
+				<a href="http://host.hk.cn/" target="_blank" rel="noopener noreferrer" class="site-card" style="animation-delay: 0.9s;">
+					<div class="site-card-content">
+						<div class="site-icon"> 香 </div>
+						<div class="site-info">
+							<div class="site-name">香港主机</div>
+							<div class="site-desc">20元永久网站主机</div>
+						</div>
+					</div>
+					<div class="site-card-footer">
+						<div class="site-url">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg> host.hk.cn
+						</div>
+					</div>
+				</a>
+		-->
+			</div>
+		</div>
 
 		<!-- 底部版权栏 -->
 		<footer class="footer">
 			<div class="footer-content">
 				<p>欲买桂花同载酒，终不似，少年游。</p>
-				<p>&copy; <script>document.write(new Date().getFullYear());</script> Jimday. All Rights Reserved.&nbsp;
-					<a href="http://caonb.cn/" target="_blank" style="text-decoration: none;color: inherit;">Template</a>&nbsp;|
-					<a href="sitemap.xml" title="Sitemap" target="_blank" style="text-decoration: none;color: inherit;">网站地图</a>
+				<p>&copy; <span id="year"></span> Jimday. All Rights Reserved.&nbsp;
+					<a style="text-decoration: none;color: inherit;" title="豆包 &bull; 微微微微微微微微微微微微微微微调">豆包</a>&nbsp;|
+					<a style="text-decoration: none;color: inherit;" title="caonb.cn">Template</a>&nbsp;|
+					<a href="sitemap.xml" title="Sitemap" target="_blank" rel="noopener noreferrer" style="text-decoration: none;color: inherit;">网站地图</a>
 				</p>
 			</div>
 		</footer>
@@ -263,9 +235,7 @@
 	<div class="dynamic-island-container">
 		<div class="dynamic-island" id="dynamicIsland">
 			<div class="dynamic-island-icon">
-			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" id="dynamicIslandIconSvg">
-				<polyline points="20 6 9 17 4 12"></polyline>
-			</svg>
+				<i class="fa-solid fa-check" id="dynamicIslandIconSvg"></i>
 			</div>
 				<div class="dynamic-island-text" id="dynamicIslandText"></div>
 			<div class="dynamic-island-progress">
@@ -273,14 +243,16 @@
 			</div>
 		</div>
 	</div>
-	<script src="assets/js/DynamicIslandTimer.js"></script><!--灵动岛计时器-->
+	<script src="assets/js/dynamicIsland-timer.js"></script><!--灵动岛计时器-->
 	<link rel="stylesheet" type="text/css" href="assets/css/dynamic-island-style.css"><!--灵动岛style-->
-	<script src="assets/js/DynamicIslandText.js"></script><!--灵动岛文字-->
+	<script src="assets/js/dynamicIsland-text.js"></script><!--灵动岛文字-->
 
 	<!--translate.zvo.cn-->
 	<script src="assets/js/translate.js"></script>
 	<!--translate.js settings-->
-	<script src="assets/js/translate-fine-tuning.js"></script>
+	<script src="assets/js/translate-config.js"></script>
+	
+	<script src="assets/js/main.js"></script>
 </body>
 	<!--translate.zvo.cn-->
 	<script>
