@@ -2,8 +2,10 @@
 <html lang="zh-CN">
 <head>
 	<title>其他 - 阿戴主页</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css"><!--主体CSS-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/all.min.css"><!--fontawesome-->
 	<script>
-		fetch('../../assets/public/header.html')
+		fetch('/assets/public/header.html')
 			.then(response => response.text())
 			.then(data => {
 				document.getElementById('headerpage').innerHTML = data;
@@ -11,7 +13,7 @@
 			.catch(error => {
 				console.error('加载头部失败:', error);
 			});
-		fetch('../../assets/public/footer.html')
+		fetch('/assets/public/footer.html')
 			.then(response => response.text())
 			.then(data => {
 				document.getElementById('footerpage').innerHTML = data;
@@ -67,7 +69,7 @@
 		<footer class="footer">
 			<div class="footer-content">
 				<p>想当年，金戈铁马，气吞万里如虎。</p>
-				<p>&copy; <span id="year"></span> Jimday. All Rights Reserved.&nbsp;
+				<p>&copy; <span id="year"></span>
 					<div id="footerpage"></div>
 				</p>
 			</div>
