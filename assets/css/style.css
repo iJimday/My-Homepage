@@ -603,12 +603,13 @@ body {
 	background: linear-gradient(135deg, #0088FF 0%, #1677FF 100%);
 	color: white;
 	border: none;
-	padding: 10px 24px;
+	padding: 12px 32px;
 	border-radius: 12px;
 	font-size: 14px;
 	font-weight: 600;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	min-width: 120px;
 }
 
 .modal-close:hover {
