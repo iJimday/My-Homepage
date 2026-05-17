@@ -5,11 +5,45 @@
 	<title>工具集合 - 阿戴主页</title>
 	<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
 	<script>
-		$(function() {
-			$("#headerpage").load("../../assets/public/header.html");
-			$("#modal-box-page").load("../../assets/public/modal-box.html");
-			$("#footerpage").load("../../assets/public/footer.html");
+		$(document).ready(function() {
+		    $(document).on('click', '.search-btn', function() {
+		        const searchTerm = $(this).closest('.search-box').find('input').val().trim();
+		        if (searchTerm) {
+		            alert('搜索: ' + searchTerm);
+		        }
+		    });
+		    
+		    $(document).on('mouseenter', '.main-nav li', function() {
+		        $(this).addClass('hover');
+		    });
+		    
+		    $(document).on('mouseleave', '.main-nav li', function() {
+		        $(this).removeClass('hover');
+		    });
+		    
+		    $("#headerpage").load("/assets/public/header.html");
+			$("#modal-box-page").load("/assets/public/modal-box.html");
+		    $("#footerpage").load("/assets/public/footer.html", function() {
+		        initCopyrightYear();
+		        initStickyHeader();
+		    });
 		});
+		
+		function initCopyrightYear() {
+		    $('.copyright-year').text(new Date().getFullYear());
+		}
+		
+		function initStickyHeader() {
+		    if ($('.main-header').length) {
+		        $(window).scroll(function() {
+		            if ($(window).scrollTop() > 100) {
+		                $('.main-header').addClass('sticky');
+		            } else {
+		                $('.main-header').removeClass('sticky');
+		            }
+		        });
+		    }
+		}
 	</script>
 </head>
 
@@ -39,7 +73,7 @@
 			</div>
 
 			<div class="sites-grid">
-				<a href="../../" rel="noopener noreferrer" class="site-card" style="animation-delay: 0s;">
+				<a href="/" rel="noopener noreferrer" class="site-card" style="animation-delay: 0s;">
 					<div class="site-card-content">
 						<div class="site-icon">我 </div>
 						<div class="site-info">
@@ -115,11 +149,11 @@
 	<div id="modal-box-page"></div>
 
 	<!--translate.zvo.cn-->
-	<script src="../../assets/js/translate.js"></script>
+	<script src="/assets/js/translate.js"></script>
 	<!--translate.js settings-->
-	<script src="../../assets/js/translate-config.js"></script>
+	<script src="/assets/js/translate-config.js"></script>
 	
-	<script src="../../assets/js/main.js"></script>
+	<script src="/assets/js/main.js"></script>
 	
 	<!--translate.zvo.cn-->
 	<script>
